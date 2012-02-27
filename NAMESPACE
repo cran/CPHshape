@@ -1,0 +1,7 @@
+export(
+  find.H,
+  find.hazard,
+  find.shapeCPH,
+  find.shapeMLE,
+  plot.CPHshape
+  )

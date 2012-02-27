@@ -1,0 +1,709 @@
+sort(x)
+n <- 10^8
+x <- rgeom(n,0.5)
+x <- sort(x)
+n <- 10^9
+x <- rgeom(n,0.5)
+matrix(1:9, 3,3)
+M <- matrix(1:9, 3,3)
+as.vector(M)
+t <- 1:10
+rnorm(t)
+rnorm(10)
+set.seed(1234)
+rnorm(10)
+set.seed(1234)
+rnorm(t)
+l.ex <- list(a = list(1:5, LETTERS[1:5]), b = "Z", c = NA)#
+unlist(l.ex, recursive = FALSE)#
+unlist(l.ex, recursive = TRUE)
+l.ex
+unlist(l.ex)
+unlist(l.ex)[1]
+col.names(unlist(l.ex))
+as.vector(unlist(l.ex))
+u <- (1:1000)/1000
+y<-log((4+u)/u)
+plot(u,y)
+min(y)
+y<-log((1+u)/u)
+min(y)
+f	<-	function(x, delta) {(x+delta)*log(x+delta)-x*log(x)}
+h	<-	function(delta) f(x=0.5, delta)
+plot(h)
+plot(h, xlim=c(-1,1))
+f2	<-	function(x, delta) (delta^2)/x
+f	<-	function(x, delta) {(x+delta)*log(x+delta)-x*log(x)}#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+h	<-	function(delta) f(x=0.5, delta)#
+h2	<-	function(delta) f2(x=0.5, delta)#
+#
+plot(h, xlim=c(-1,1))#
+plot(h2, xlim=c(-1,1), add=TRUE, col="red")
+f	<-	function(x, delta) {(x+delta)*log(x+delta)-x*log(x)}#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+h	<-	function(delta) f(x=0.5, delta)#
+h2	<-	function(delta) 2*f2(x=0.5, delta)#
+#
+plot(h, xlim=c(-1,1))#
+plot(h2, xlim=c(-1,1), add=TRUE, col="red")
+f	<-	function(x, delta) {(x+delta)*log(x+delta)-x*log(x)}#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+h	<-	function(delta) f(x=0.5, delta)#
+h2	<-	function(delta) 4*f2(x=0.5, delta)#
+#
+plot(h, xlim=c(-1,1))#
+plot(h2, xlim=c(-1,1), add=TRUE, col="red")
+f	<-	function(x, delta) {(x+delta)*log(x+delta)-x*log(x)}#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+h	<-	function(delta) f(x=0.5, delta)#
+h2	<-	function(delta) 20*f2(x=0.5, delta)#
+#
+plot(h, xlim=c(-1,1))#
+plot(h2, xlim=c(-1,1), add=TRUE, col="red")
+plot(h, xlim=c(-1,1))#
+plot(h2, xlim=c(-1,1), add=TRUE, col="red")#
+abline(v=0, lty=2)
+f	<-	function(x, delta) {(x+delta)*log(x+delta)-x*log(x)}#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+h	<-	function(delta) f(x=0.5, delta)#
+h2	<-	function(delta) 20*f2(x=0.5, delta)#
+#
+plot(h, xlim=c(-1,1))#
+plot(h2, xlim=c(-1,1), add=TRUE, col="red")#
+abline(h=0, lty=2)
+f	<-	function(x, delta) {(x+delta)*log(x+delta)-x*log(x)}#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+x0	<-	0.01#
+h	<-	function(delta) f(x=x0, delta)#
+h2	<-	function(delta) 20*f2(x=x0, delta)#
+#
+plot(h, xlim=c(-1,1))#
+plot(h2, xlim=c(-1,1), add=TRUE, col="red")#
+abline(h=0, lty=2)
+f	<-	function(x, delta) {(x+delta)*log(x+delta)-x*log(x)}#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+x0	<-	0.01#
+h	<-	function(delta) f(x=x0, delta)#
+h2	<-	function(delta) 20*f2(x=x0, delta)#
+#
+plot(h, xlim=c(0-x0,1))#
+plot(h2, xlim=c(0-x0,1), add=TRUE, col="red")#
+abline(h=0, lty=2)
+f	<-	function(x, delta) {(x+delta)*log(x+delta)-x*log(x)}#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+x0	<-	0.99#
+h	<-	function(delta) f(x=x0, delta)#
+h2	<-	function(delta) 20*f2(x=x0, delta)#
+#
+plot(h, xlim=c(0-x0,1))#
+plot(h2, xlim=c(0-x0,1), add=TRUE, col="red")#
+abline(h=0, lty=2)
+f	<-	function(x, delta) {(x+delta)*log(x+delta)-x*log(x)}#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+x0	<-	0.99#
+h	<-	function(delta) f(x=x0, delta)#
+h2	<-	function(delta) 40*f2(x=x0, delta)#
+#
+plot(h, xlim=c(0-x0,1))#
+plot(h2, xlim=c(0-x0,1), add=TRUE, col="red")#
+abline(h=0, lty=2)
+f	<-	function(x, delta) {(x+delta)*log(x+delta)-x*log(x)}#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+x0	<-	0.99#
+h	<-	function(delta) f(x=x0, delta)#
+h2	<-	function(delta) 100*f2(x=x0, delta)#
+#
+plot(h, xlim=c(0-x0,1))#
+plot(h2, xlim=c(0-x0,1), add=TRUE, col="red")#
+abline(h=0, lty=2)
+rr	<-	c(0-x0,1)#
+rr	<-	c(-0.01, 0.01)#
+plot(h, xlim=rr)#
+plot(h2, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+x0	<-	0.5#
+h	<-	function(delta) f(x=x0, delta)#
+h2	<-	function(delta) 100*f2(x=x0, delta)#
+#
+rr	<-	c(0-x0,1)#
+rr	<-	c(-0.01, 0.01)#
+plot(h, xlim=rr)#
+plot(h2, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+f	<-	function(x, delta) (x+delta)*log(x+delta)-x*log(x)#
+f1	<-	function(x, delta) log(x)*abs(delta)#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+x0	<-	0.5#
+h	<-	function(delta) f(x=x0, delta)#
+h2	<-	function(delta) f1(x=x0, delta)+f2(x=x0, delta)#
+#
+rr	<-	c(0-x0,1)#
+rr	<-	c(-0.01, 0.01)#
+plot(h, xlim=rr)#
+plot(h2, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+f	<-	function(x, delta) (x+delta)*log(x+delta)-x*log(x)#
+f1	<-	function(x, delta) abs(log(x)*delta)#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+x0	<-	0.5#
+h	<-	function(delta) f(x=x0, delta)#
+h2	<-	function(delta) f1(x=x0, delta)+f2(x=x0, delta)#
+#
+rr	<-	c(0-x0,1)#
+rr	<-	c(-0.01, 0.01)#
+plot(h, xlim=rr)#
+plot(h2, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+x0	<-	0.5#
+h	<-	function(delta) f(x=x0, delta)#
+h1	<-	function(delta) f1(x=x0, delta)#
+h12	<-	function(delta) f1(x=x0, delta)+f2(x=x0, delta)#
+#
+rr	<-	c(0-x0,1)#
+rr	<-	c(-0.01, 0.01)#
+plot(h, xlim=rr)#
+plot(h1, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+rr	<-	c(0-x0,1)#
+#rr	<-	c(-0.01, 0.01)#
+plot(h, xlim=rr)#
+plot(h1, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+x0	<-	0.99#
+h	<-	function(delta) f(x=x0, delta)#
+h1	<-	function(delta) f1(x=x0, delta)#
+h12	<-	function(delta) f1(x=x0, delta)+f2(x=x0, delta)#
+#
+rr	<-	c(0-x0,1)#
+#rr	<-	c(-0.01, 0.01)#
+plot(h, xlim=rr)#
+plot(h1, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+rr	<-	c(0-x0,1)#
+#rr	<-	c(-0.01, 0.01)#
+plot(h, xlim=rr)#
+plot(h12, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+f	<-	function(x, delta) (x+delta)*log(x+delta)-x*log(x)#
+f1	<-	function(x, delta) abs(log(x)*delta)#
+f2	<-	function(x, delta) (delta^2)/x#
+#
+x0	<-	0.99#
+h	<-	function(delta) f(x=x0, delta)#
+h1	<-	function(delta) f1(x=x0, delta)#
+h12	<-	function(delta) 100*(f1(x=x0, delta)+f2(x=x0, delta))#
+#
+rr	<-	c(0-x0,1)#
+#rr	<-	c(-0.01, 0.01)#
+plot(h, xlim=rr)#
+plot(h12, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+rr	<-	c(-0.01, 0.01)#
+plot(h, xlim=rr)#
+plot(h12, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+rr	<-	c(-0.001, 0.001)#
+plot(h, xlim=rr)#
+plot(h12, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+rr	<-	c(-0.0001, 0.0001)#
+plot(h, xlim=rr)#
+plot(h12, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+x0	<-	0.01#
+h	<-	function(delta) f(x=x0, delta)#
+h1	<-	function(delta) f1(x=x0, delta)#
+h12	<-	function(delta) 100*(f1(x=x0, delta)+f2(x=x0, delta))#
+#
+rr	<-	c(0-x0,1)#
+#rr	<-	c(-0.0001, 0.0001)#
+plot(h, xlim=rr)#
+plot(h12, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+rr	<-	c(-0.0001, 0.0001)#
+plot(h, xlim=rr)#
+plot(h12, xlim=rr, add=TRUE, col="red")#
+abline(h=0, lty=2)
+f1	<-	function(x)  dnorm(x)
+f2	<-	function(x)  dexp(x)
+f1	<-	function(x)  dnorm(x, mean=0, sd=1)
+f2	<-	function(x)  dnorm(x, mean=3, sd=1)
+plot(f1)
+plot(f1, xlim=c(-10,1))
+plot(f1, xlim=c(-10,10))
+plot(f2, xlim=c(-10,10), add=TRUE, col="red")
+plot(f1, xlim=c(-10,10))
+plot(f2, xlim=c(-10,10), add=TRUE, col="red")
+xx	<-	seq(-5, 10, length.out=1000)
+xx
+xx[2]-xx[1]
+risk	<-	sum((f1(xx)-f2(xx))^2)*(xx[2]-xx[2])
+risk
+risk	<-	sum((f1(xx)-f2(xx))^2)*(xx[2]-xx[1])
+risk
+f1		<-	function(x)  dnorm(x, mean=0, sd=1)#
+f2		<-	function(x)  dnorm(x, mean=2, sd=1)#
+#
+xx		<-	seq(-5, 10, length.out=1000)#
+risk	<-	sum((f1(xx)-f2(xx))^2)*(xx[2]-xx[1])
+risk
+?density
+n		<-	1000
+x		<-	rnorm(n)
+fit		<-	density(x, bw="nrd", kernel="epanchnikov")
+fit		<-	density(x, bw="nrd", kernel="epanechnikov")
+plot(fit)
+fit		<-	density(x, bw="nrd", kernel="epanechnikov", n=1000, from=-5, to= 10)
+fit$x
+fit$x-xx
+fit$y
+fit$x
+fit$y
+plot(fit$x, fit$y, type="l")
+risk	<-	sum((f1(xx)-fit$y)^2)*(xx[2]-xx[1])
+risk
+rep(c(1,2), each=10)
+boxplot(f1(xx))
+boxplot(f2(xx))
+r <- c(rnorm(100, 0, 1), rnorm(100, 1,1))
+t <- rep(c(1,2), each=100)
+t
+boxplot(r~t)
+boxplot(r~t, names=c("data1", "data2"))
+boxplot(r~t, names=c("data1", "data2"), col=c(1,2))
+n	<-	1000
+u	<-	runif(n)
+u
+hist(u, n=25, col="orange")
+x	<-	-log(1-u)
+x
+n	<-	1
+u	<-	runif(n)
+u
+x	<-	-log(1-u)
+x
+hist(x, col="blue")
+n	<-	1000#
+u	<-	runif(n)#
+hist(u, n=25, col="orange")#
+x	<-	-log(1-u)#
+hist(x, col="blue")
+hist(x, col="lightblue")
+n	<-	1000#
+u	<-	runif(n)#
+hist(u, n=n/10, col="orange")#
+x	<-	-log(1-u)#
+hist(x, n=n/10, col="lightblue")
+n	<-	1000#
+u	<-	runif(n)#
+hist(u, n=n/20, col="orange")
+x	<-	-log(1-u)#
+hist(x, n=n/20, col="lightblue")
+n	<-	100000#
+u	<-	runif(n)#
+hist(u, n=n/20, col="orange")#
+x	<-	-log(1-u)#
+hist(x, n=n/20, col="lightblue")
+hist(x, n=sqrt(n), col="lightblue")
+hist(u, n=sqrt(n), col="orange")
+n	<-	100000#
+u	<-	runif(n)#
+hist(u, n=sqrt(n), col="orange")#
+x	<-	-log(1-u)#
+hist(x, n=sqrt(n), col="lightblue")
+hist(u, n=1000, col="orange")
+n	<-	100#
+u	<-	runif(n)#
+hist(u, n=sqrt(n), col="orange")#
+x	<-	-log(1-u)#
+hist(x, n=sqrt(n), col="lightblue")
+n	<-	1000#
+u	<-	runif(n)#
+hist(u, n=sqrt(n), col="orange")
+x	<-	-log(1-u)#
+hist(x, n=sqrt(n), col="lightblue")
+x	<-	-log(u)#
+hist(x, n=sqrt(n), col="lightblue")
+library(mvtnorm)
+library(rgl)
+x <- c(1,1,0,0)
+matrix(x)
+matrix(x,2,2)
+s1		<-	1#
+s2		<-	2#
+rho		<-	0
+matrix(c(s1^2,rho*s1*s2, rho*s1*s2, s2^2),2,2)
+f		<-	function(x,y) <- dmvnorm(c(x,y), mean=c(0,0), sigma=matrix(c(s1^2,rho*s1*s2, rho*s1*s2, s2^2),2,2))
+f		<-	function(x,y) dmvnorm(c(x,y), mean=c(0,0), sigma=matrix(c(s1^2,rho*s1*s2, rho*s1*s2, s2^2),2,2))
+C1		<-	outer(x,y)
+x	<-	seq(-3*s1,3*s1,length=101)
+y	<-	seq(-3*s2,3*s2,length=101)
+C1	<-	outer(x,y)
+x	<-	seq(-3*s1,3*s1,length=11) #
+y	<-	seq(-3*s2,3*s2,length=11) #
+C1	<-	outer(x,y)
+C1
+?outer
+C1	<-	outer(x,y,f)
+f(0,0)
+f(0,0.1)
+x	<-	seq(-3*s1,3*s1,length=11) #
+y	<-	seq(-3*s2,3*s2,length=11) #
+pdf	<-	outer(x,y,f)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			pdf[i,j]	<-	f1(x[i],y[j])#
+			}	#
+		}
+pdf	<-	outer(x,y,f)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			pdf[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}
+pdf	<-	outer(x,y)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			pdf[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}
+persp3d(x, y, pdf1, col="blue", alpha=0.7, aspect=c(1,1,0.75))
+persp3d(x, y, pdf, col="blue", alpha=0.7, aspect=c(1,1,0.75))
+?aspect
+?persp3d
+persp3d(x, y, pdf, col="blue", alpha=0.7, aspect=c(1/(6*s1),1/(6*s2),1))
+persp3d(x, y, pdf, col="blue", alpha=0.7, aspect=c((6*s1),(6*s2),1))
+s1		<-	1#
+s2		<-	2#
+rho		<-	0.9#
+f		<-	function(x,y) dmvnorm(c(x,y), mean=c(0,0), sigma=matrix(c(s1^2,rho*s1*s2, rho*s1*s2, s2^2),2,2))#
+#
+open3d()#
+x	<-	seq(-3*s1,3*s1,length=11) #
+y	<-	seq(-3*s2,3*s2,length=11) #
+pdf	<-	outer(x,y)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			pdf[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}#
+ #
+persp3d(x, y, pdf, col="blue", alpha=0.7, aspect=c((6*s1),(6*s2),1))#
+grid3d(c("x", "y+", "z"))
+x	<-	seq(-3*s1,3*s1,length=11) #
+y	<-	seq(-3*s2,3*s2,length=11) #
+z	<-	outer(x,y)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			z[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}
+x
+y
+outer(x,y)
+contour(x,y,z)
+x	<-	seq(-3*s1,3*s1,length=101) #
+y	<-	seq(-3*s2,3*s2,length=101) #
+z	<-	outer(x,y)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			z[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}#
+ #
+contour(x,y,z)
+x	<-	seq(-3*s1,3*s1,length=41) #
+y	<-	seq(-3*s2,3*s2,length=41) #
+z	<-	outer(x,y)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			z[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}#
+ #
+contour(x,y,z)
+contour(x,y,z)
+s1		<-	1#
+s2		<-	4#
+rho		<-	0.9#
+f		<-	function(x,y) dmvnorm(c(x,y), mean=c(0,0), sigma=matrix(c(s1^2,rho*s1*s2, rho*s1*s2, s2^2),2,2))#
+#
+x	<-	seq(-3*s1,3*s1,length=41) #
+y	<-	seq(-3*s2,3*s2,length=41) #
+z	<-	outer(x,y)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			z[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}#
+ #
+contour(x,y,z)
+s1		<-	1#
+s2		<-	4#
+rho		<-	-0.9#
+f		<-	function(x,y) dmvnorm(c(x,y), mean=c(0,0), sigma=matrix(c(s1^2,rho*s1*s2, rho*s1*s2, s2^2),2,2))#
+#
+x	<-	seq(-3*s1,3*s1,length=41) #
+y	<-	seq(-3*s2,3*s2,length=41) #
+z	<-	outer(x,y)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			z[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}#
+ #
+contour(x,y,z)
+s1		<-	1#
+s2		<-	4#
+rho		<-	-0.01#
+f		<-	function(x,y) dmvnorm(c(x,y), mean=c(0,0), sigma=matrix(c(s1^2,rho*s1*s2, rho*s1*s2, s2^2),2,2))#
+#
+x	<-	seq(-3*s1,3*s1,length=41) #
+y	<-	seq(-3*s2,3*s2,length=41) #
+z	<-	outer(x,y)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			z[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}#
+ #
+contour(x,y,z)
+x <- y <- seq(-4*pi, 4*pi, len=27)#
+r <- sqrt(outer(x^2, y^2, "+"))#
+image(z = z <- cos(r^2)*exp(-r/6), col=gray((0:32)/32))#
+image(z, axes = FALSE, main = "Math can be beautiful ...",#
+      xlab = expression(cos(r^2) * e^{-r/6}))#
+contour(z, add = TRUE, drawlabels = FALSE)
+image(x,y,z)
+x	<-	seq(-3*s1,3*s1,length=41) #
+y	<-	seq(-3*s2,3*s2,length=41) #
+z	<-	outer(x,y)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			z[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}
+image(x,y,z)
+contour(x,y,z)
+image(x,y,z)
+x	<-	seq(-3*s1,3*s1,length=51) #
+y	<-	seq(-3*s2,3*s2,length=51) #
+z	<-	outer(x,y)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			z[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}#
+ #
+contour(x,y,z)#
+image(x,y,z)
+persp3d(x,y,z, col="lightblue", aspect=c(3*s1, 3*s2,0.5))
+persp3d(x,y,z, col="lightblue", aspect=c(3*s1, 3*s2,0.01))
+persp3d(x,y,z, col="lightblue", aspect=c(3*s1, 3*s2, 10))
+persp3d(x,y,z, col="lightblue", aspect=c(3*s1, 3*s2, 5))
+persp3d(x,y,z, col="lightblue", aspect=c(3*s1, 3*s2, 3))
+s1		<-	1#
+s2		<-	4#
+rho		<-	0.9#
+f		<-	function(x,y) dmvnorm(c(x,y), mean=c(0,0), sigma=matrix(c(s1^2,rho*s1*s2, rho*s1*s2, s2^2),2,2))#
+#
+x	<-	seq(-3*s1,3*s1,length=51) #
+y	<-	seq(-3*s2,3*s2,length=51) #
+z	<-	outer(x,y)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			z[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}
+persp3d(x,y,z, col="lightblue", aspect=c(3*s1, 3*s2, 3))
+s1		<-	1#
+s2		<-	1#
+rho		<-	0.9#
+f		<-	function(x,y) dmvnorm(c(x,y), mean=c(0,0), sigma=matrix(c(s1^2,rho*s1*s2, rho*s1*s2, s2^2),2,2))#
+#
+x	<-	seq(-3*s1,3*s1,length=51) #
+y	<-	seq(-3*s2,3*s2,length=51) #
+z	<-	outer(x,y)#
+	for(i in 1:length(x)){#
+		for(j in 1:length(y)){#
+			z[i,j]	<-	f(x[i],y[j])#
+			}	#
+		}#
+ #
+contour(x,y,z)#
+#
+image(x,y,z)#
+#
+persp3d(x,y,z, col="lightblue", aspect=c(3*s1, 3*s2, 3))
+n	<-	10000#
+x	<-	rnorm(n)#
+x	<-	cumsum(x)/1:n#
+#
+plot(x, type="l", lwd=3)#
+abline(h=0, type="l", lwd=2, col="red")
+n	<-	10000#
+x	<-	(rnorm(n))^2#
+x	<-	cumsum(x)/1:n#
+#
+plot(x, type="l", lwd=3)#
+abline(h=1, type="l", lwd=2, col="red")
+n	<-	10000#
+x	<-	rcauchy(n)#
+x	<-	cumsum(x)/1:n#
+#
+plot(x, type="l", lwd=3)#
+abline(h=0, type="l", lwd=2, col="red")
+B	<-	250#
+n	<-	100000#
+m	<-	rep(0,B)#
+for(i in 1:B){#
+	u		<-	runif(n)#
+	x		<-	pi*cos(pi*u)#
+	m[i]	<-	mean(x)	#
+	}#
+hist(m, col="purple")
+library(sampling)
+?sampling
+??sampling
+library(survey)
+?survey
+help(package=survey)
+pkgname <- "CPHshape"
+source(file.path(R.home("share"), "R", "examples-header.R"))
+options(warn = 1)
+library('CPHshape')
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/plot.shapeCPH.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/internal.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/find.ushapedFULLMLE.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/find.unimodalFULLMLE.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/find.shapeMLE.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/find.shapeCPH.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/find.modeFULLMLE.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/find.increasingFULLMLE.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/find.hazard.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/find.H.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/find.decreasingFULLMLE.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/find.decreasingFULLMLE.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/find.beta.R")
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/find.antimodeFULLMLE.R")
+n	<-	200#
+beta1	<-	1#
+beta2	<-	2#
+z1	<-	rbinom(n,1,0.5)#
+z2	<-	runif(n,-1,1)#
+w	<-	exp(beta1*z1+beta2*z2)#
+x	<-	rexp(n, rate=0.3*w)#
+delta	<-	1*(x<=2.5)#
+x	<-	pmin(x,2.5)#
+#
+# compute MLE#
+mle	<-	find.shapeCPH(x, cbind(z1,z2) , delta, print=TRUE, type="decreasing")#
+#
+# estimates of the effect parameter#
+mle$beta
+mle
+plot(mle)
+mle
+plot(mle)
+	ranges 	<- 	mle$h.range#
+	val		<-	mle$h.val#
+	type	<-	mle$type#
+	mode	<-	mle$mode
+pch=19
+cex=0.5
+xlim=range(mle$h.range)
+ylim=range(val[val<Inf])
+xlab=""
+ylab="hazard"
+tupe
+type
+	if(type=="decreasing"){#
+		yy		<-	val#
+		xx		<-	ranges#
+		xx1		<-	xx[-length(xx)]#
+		xx2		<-	xx[-1]#
+		plot(xx2,yy, pch=pch, cex=cex, xlim=xlim, ylim=ylim, xlab=xlab, ylab=ylab, ...)#
+		segments(xx1,yy,xx2,yy)#
+		}
+		plot(xx2,yy, pch=pch, cex=cex, xlim=xlim, ylim=ylim, xlab=xlab, ylab=ylab)
+plot(1:2, 1:2)
+dev.off()
+plot(1:2, 1:2)
+		yy		<-	val#
+		xx		<-	ranges#
+		xx1		<-	xx[-length(xx)]#
+		xx2		<-	xx[-1]#
+		plot(xx2,yy, pch=pch, cex=cex, xlim=xlim, ylim=ylim, xlab=xlab, ylab=ylab)#
+		segments(xx1,yy,xx2,yy)#
+		}
+plot(mle)
+plot(mle)#
+abline(h=0.3, col="red") # add true baseline#
+rug(x)
+plot(mle, col="blue")
+n	<-	100#
+x	<-	runif(n)#
+#
+# compute MLE of increasing hazard and evaluate fitted hazard at t=0.2#
+mle	<-	find.shapeMLE(x, type="increasing")#
+find.hazard(0.2, mle$h.val, mle$h.range, type=mle$type)
+mle	<-	find.shapeMLE(x, type="unimodal")#
+find.hazard(0.2, mle$h.val, mle$h.range, type=mle$type, mode=mle$mode)
+n	<-	200#
+beta1	<-	1#
+beta2	<-	2#
+z1	<-	rbinom(n,1,0.5)#
+z2	<-	runif(n,-1,1)#
+w	<-	exp(beta1*z1+beta2*z2)#
+x	<-	rexp(n, rate=0.3*w)#
+delta	<-	1*(x<=2.5)#
+x	<-	pmin(x,2.5)#
+#
+# compute MLE#
+mle	<-	find.shapeCPH(x, cbind(z1,z2) , delta, print=TRUE, type="decreasing")
+mle$beta#
+#
+# plot resulting estimate of baseline hazard#
+#
+plot(mle)#
+abline(h=0.3, col="red") # add true baseline#
+rug(x)
+n	<-	500#
+x	<-	runif(n)#
+#
+# compute MLE of increasing hazard#
+mle	<-	find.shapeMLE(x, type="increasing")#
+#
+#
+# plot the fitted hazard#
+plot(mle)#
+rug(x)#
+#
+# add true hazard to the plot#
+h.true	<-	function(x) 1/(1-x)#
+plot(h.true, col="red", add=TRUE)
+plot(mle, xlim=c(0,1))
+plot(mle, ylim=c(0,1))
+plot(mle, ylim=c(0,10))
+plot(mle, xlim=c(0,1))
+plot(h.true, col="red", add=TRUE)
+plot(mle, ylim=c(0,1))
+plot(h.true, col="red", add=TRUE)
+plot(mle, ylim=c(0,10))
+plot(h.true, col="red", add=TRUE)
+source("/Users/hanna/Desktop/CPHshape2/R/CPHshape/R/plot.shapeCPH.R")
+plot(mle, ylim=c(0,10))
+plot(mle, ylim=c(0,10), col="blue")
